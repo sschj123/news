@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1, user-scalable=no">
-<title>好好学习</title>
+<title>牛腩面好吃</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <style>
 blockquote, body, dd, dir, dl, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, input, legend, menu, ol, optgroup, p, pre, tbody, td, textarea, tfoot, th, thead, ul {
@@ -141,7 +141,7 @@ body {
 	<div class="pageWord">
 		<fieldset>
 			<legend id="copy_tip">长.按框内>全选>复制>打开手机桃.宝</legend>
-			<p id="itemWord" class="itemWord" style="font-size: 12px;">复.制框内整段文字，打开「手机.匋.堡」即可「领取优.惠.卷」并购买<span id="taokey"></span></p>
+			<p id="itemWord" class="itemWord" style="font-size: 12px;">复.制框内整段文字，打开「手机.匋.堡」即可「领取优.惠.卷」并购买<span id="keywords"></span></p>
 		</fieldset>
 		<button id="copy" type="button" data-clipboard-text="" class="itemCopy" style="display:none;">一键复制</button>
 		<!--<a id="coupons" hidden="hidden" href="" style="background: #00a1ff;border: none;font-size: 16px;padding: 6px 15px;display: inline-block;margin: 10px 4px 10px 4px;border-radius: 16px;color: #fff;text-decoration: none;">电脑链接</a> -->
@@ -182,14 +182,14 @@ function getUrlParams(paras){
 }
 
 $(function(){
-	var cip =getUrlParams('cip');
+	var title =getUrlParams('title');
 	var url = decodeURIComponent(getUrlParams('address'));
 	var image = decodeURIComponent(getUrlParams('image'));
 	
 	$('#img').attr('src', image);
 	$('#coupons').attr('href',url);
-	$('#copy').attr('data-clipboard-text', '￥'+cip+'￥');
-	$('#taokey').text('￥'+cip+'￥');
+	$('#copy').attr('data-clipboard-text', '￥'+title+'￥');
+	$('#keywords').text('￥'+title+'￥');
 })
 
 
@@ -253,4 +253,4 @@ $(function() {
 });
 </script>
 </body>
-</html
+</html>
